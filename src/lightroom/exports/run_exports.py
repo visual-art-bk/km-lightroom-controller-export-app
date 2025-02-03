@@ -84,5 +84,5 @@ def run_exports(lightroom: WindowSpecification):
     export_button = export_window.child_window(
         title="내보내기", auto_id="1", control_type="Button"
     )
-    time.sleep(1)
+
     export_button.click_input()

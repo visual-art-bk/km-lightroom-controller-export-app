@@ -7,6 +7,7 @@ def select_ui(
     title="정의되지않음",
     control_type="정의되지않음",
     timeout=0.1,
+    no_action=False
 ) -> WindowSpecification:
     try:
         print(f"{title} 메뉴 클릭 시작..")
@@ -16,7 +17,8 @@ def select_ui(
         # ✅ 5초 동안 0.5초 간격으로 메뉴 확인 → 즉시 감지 가능
         for _ in range(10):
             if ui.exists():
-                ui.click_input()
+                if no_action == False:
+                    ui.click_input()
                 print(f"{title}  메뉴 클릭 성공!")
                 return ui
             time.sleep(timeout)
