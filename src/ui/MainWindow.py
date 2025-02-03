@@ -44,7 +44,7 @@ class MainWindow(QMainWindow):
     def __init__(self, x=None, y=0, width=300, height=200):
         super().__init__()
 
-        self.setWindowTitle("Lightroom 실행기")
+        self.setWindowTitle("사진 내보내기 매니저")
 
         # ✅ 항상 최상단에 고정
         self.setWindowFlags(Qt.WindowStaysOnTopHint)
@@ -79,9 +79,9 @@ class MainWindow(QMainWindow):
         self.phone_number_entry = QLineEdit()
         layout.addWidget(self.phone_number_entry)
 
-        self.run_button = QPushButton("Lightroom 실행")
-        self.run_button.clicked.connect(self.run_lightroom)
-        layout.addWidget(self.run_button)
+        self.run_exprt_button = QPushButton("내보내기 시작")
+        self.run_exprt_button.clicked.connect(self.run_lightroom)
+        layout.addWidget(self.run_exprt_button)
 
         container = QWidget()
         container.setLayout(layout)

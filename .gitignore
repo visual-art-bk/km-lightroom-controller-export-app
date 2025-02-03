@@ -6,3 +6,10 @@ py_inspect.py
 
 **/__pycache__/
 
+build
+
+dist
+
+*.spec
+
+**/*.spec
