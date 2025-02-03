@@ -18,7 +18,7 @@ CONTROL_TYPE_EXPORT_PATH = "Button"
 TITLE_FILE_MENU = "파일(F)"
 TITLE_SUB_FOLDER = "하위 폴더에 넣기:"
 TITLE_EXPORT_PATH = "열기"
-TEXT_DESKTOP = "바탕 화면"
+TEXT_DESKTOP = "특정 폴더"
 
 
 def toggle_checkbox(win_specs: WindowSpecification):
@@ -33,7 +33,7 @@ def run_exports(lightroom: WindowSpecification):
     state_manager = StateManager()
     app_state = state_manager.get_state()
 
-    # TODO    
+    # TODO
     # select_all_imgs(win_specs=lightroom)
 
     # 전체 사진 단축키로 선택
